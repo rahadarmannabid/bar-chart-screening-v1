@@ -132,13 +132,15 @@
         let startTime = Date.now();
         let currentQuestionIndex = 0;
         const questions = [
-            { question: "Based on the provided intervals, which one can be identified as the whisker range for office supply sales in the western region?", options: ["20k-60k", "0k-20k", "20k-100k", "60k-100k", "Skip"] },
-            { question: "In the Quebec region, do profits from office supplies fall within the interquartile range (IQR) of:", options: ["23k-35k", "3k-23k", "-3k-23k", "-3k-35k", "Skip"] },
-            { question: "When examining the profit from furniture and office supplies in the Quebec region, what is the disparity between their median values?", options: ["5k", "10k", "15k", "20k", "Skip"] },
-            { question: "How many outlier points are there for the office supplies category?", options: ["1", "0", "10", "2", "Skip"] },
-            { question: "Between Ontario and Quebec, which region has the lesser degree of positive skewness?", options: ["Ontario", "Quebec", "They are all negatively skewed", "Skip"] },
-            { question: "Which region experiences the greatest fluctuations in product profits?", options: ["West", "Ontario", "Quebec", "Atlantic", "Skip"] }
-        ];
+    { question: "Which city has the largest range in temperature?", options: ["San Francisco", "Minneapolis", "New York", "Atlanta", "Skip"] },
+    { question: "Which axis can be considered as a continuous variable?", options: ["Temperature", "City", "Both", "None", "Skip"] },
+    { question: "In 2019, which city had the coldest weather?", options: ["Helena", "Minneapolis", "Chicago", "Atlanta", "Skip"] },
+    { question: "In 2019, which city experienced exceptionally high temperatures, standing out as an outlier?", options: ["Atlanta", "Chicago", "New York", "San Francisco", "Skip"] },
+    { question: "Out of the cities, which city had the most stable temperature (smallest amount of change)?", options: ["San Francisco", "Chicago", "Atlanta", "New York", "Skip"] },
+    { question: "Between the recorded for the 2nd and 3rd quarters, which city had the largest drop off?", options: ["San Francisco", "Atlanta", "Minneapolis", "Helena", "Skip"] }
+];
+
+
 
         function handleNextClick() {
             if (currentQuestionIndex > 0) { 

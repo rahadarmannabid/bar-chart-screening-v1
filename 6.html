@@ -132,12 +132,14 @@
         let startTime = Date.now();
         let currentQuestionIndex = 0;
         const questions = [
-            { question: "What is the range of the lower whisker for Europe regarding horsepower?", options: ["80 - 125", "45 - 70", "70 - 125", "Skip"] },
-            { question: "Which region's cars exhibit a negatively skewed box plot for MPG?", options: ["Japan", "Europe", "US", "None of the above", "Skip"] },
-            { question: "Which region’s cars have the highest interquartile range in terms of horsepower?", options: ["Japan", "Europe", "US", "Skip"] },
-            { question: "Comparing all the box plots, MPG and Horsepower have a ___ relationship.", options: ["Positive", "Negative", "No relation", "Skip"] },
-            { question: "Which region’s car exhibits the most consistent distribution of horsepower?", options: ["Japan", "Europe", "US", "Skip"] }
-        ];
+    { question: "Which axis can be considered as a discrete variable?", options: ["GDP Growth", "Year", "Skip"] },
+    { question: "In 2016, what is the approximate range of GDP growth for the different countries?", options: ["-0.5 - 7", "-0.5 - 6", "1 - 7", "-0.5 - 4", "Skip"] },
+    { question: "In 2016, which country’s GDP growth is considered as an outlier?", options: ["China", "New Zealand", "Greece", "Malaysia", "Skip"] },
+    { question: "Across all the years, what was, approximately, the lowest GDP growth rate achieved?", options: ["-9%", "-12%", "7%", "4%", "Skip"] },
+    { question: "Between the year 2016 and 2019, the GDP of Greece follows which trend?", options: ["Positive", "Negative", "Constant", "Skip"] }
+];
+
+
 
         function handleNextClick() {
             if (currentQuestionIndex > 0) { 
