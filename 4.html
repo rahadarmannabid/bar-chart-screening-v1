@@ -90,11 +90,12 @@
             <img src="bar_chart_A.png" alt="Consent Form Image">
         </div>
         <p>
-            Try to answer the following questions (8 questions) based on the box plot shown above. Each question will have multiple choice answers. Click "Next" to proceed to the next question. You can skip a question if you are unsure of the answer.
-        </p>
+            <i>Try to answer the following questions (8 questions) based on the box plot shown above. Each question will have multiple choice answers. Click "Next" to proceed to the next question. You can skip a question if you are unsure of the answer.
+            </i>
+            </p>
         
         <form id="nextSurveyForm">
-            <div id="questionContainer"></div>
+            <b><div id="questionContainer"></div></b>
             <div style="text-align: center;">
                 <button type="button" onclick="handleNextClick()">Next</button>
             </div>
@@ -134,8 +135,8 @@
         let currentQuestionIndex = 0;
         const questions = [
     { question: "For Man City, what is the approximate range of the goal differences across the seasons?", options: ["28-80", "4-48", "-20 - 10", "4 - 24", "Skip"] },
-    { question: "Which of the following axes can be considered as a discrete variable?", options: ["Goal Difference", "Football Club", "Both", "None", "Skip"] },
-    { question: "Which year was an outlier performance from Leicester Football Club?", options: ["2014", "2015", "2016", "2017", "Skip"] },
+    { question: "Which of the following axes can be considered as a independent variable?", options: ["Goal Difference", "Football Club", "Both", "None", "Skip"] },
+    { question: "Which year was an outlier performance from Leicester Club?", options: ["2014", "2015", "2016", "2017", "Skip"] },
     { question: "True or False: West Ham Club had a better goal difference across the seasons than Everton.", options: ["True", "False", "Skip"] },
     { question: "From the various performances of the clubs across multiple seasons, which are the extreme performances?", options: ["2017 season of Man City", "2017 season of West Ham", "2015 season of Liverpool", "2016 season of Everton", "Skip"] },
     { question: "What is the average goal difference for Manchester City in the years 2014 and 2017?", options: ["62", "35", "7", "10", "Skip"] },
